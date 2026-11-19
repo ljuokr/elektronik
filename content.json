@@ -1,0 +1,705 @@
+[
+ {
+  "slug": "elektronik",
+  "label": "Übersicht",
+  "title": "Elektronik",
+  "sections": [
+   {
+    "id": "kopf",
+    "accordion": false,
+    "title": "",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h1>Elektronik</h1><p class=\"lead\">Fachbereich <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\">Design &amp; Technik</a></p><p>Informationen zu Elektronikarbeiten für den Unterricht.</p><figure><img src=\"/assets/titelbild.jpg\" alt=\"Leuchtobjekte aus Acrylglas mit farbigen LEDs, im abgedunkelten Raum auf dem Boden aufgestellt und mit Kabeln verbunden\" width=\"1024\" height=\"446\"></figure>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "sicherheit",
+    "accordion": false,
+    "title": "Sicherheitshinweise",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Sicherheitshinweise</h2><p>Immer, wenn mit Elektrizität gearbeitet wird, sind diese Hinweise zwingend mitzugeben:</p><ul><li>Es darf niemals direkt an der Steckdose gearbeitet werden (230 V), da der Kontakt mit einer Spannung in diesem Bereich unter Umständen tödlich sein kann.</li><li>Von selbst gebauten Elektronikobjekten geht eine Feuergefahr aus. Diese dürfen darum nicht unbeaufsichtigt betrieben werden.</li></ul>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "anleitungen",
+    "accordion": false,
+    "title": "Anleitungen",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Anleitungen</h2><ul><li><a href=\"/led-karte\">LED-Karte</a>: eine Karte mit einer LED ausstatten.</li><li><a href=\"/led-leuchte\">LED-Leuchte</a>: eine oder mehrere LEDs über ein altes USB-Kabel betreiben.</li><li><a href=\"/elektromagnet\">Elektromagnet</a>: einen einfachen Elektromagneten herstellen.</li><li><a href=\"/fet\">Feldeffekt-Transistor (FET)</a>: einen FET als Schalter einsetzen.</li><li><a href=\"/fet-und-microbit\">FET und micro:bit</a>: einen FET zusammen mit einem micro:bit verwenden.</li><li><a href=\"/bildschirm-upcycling\">Bildschirm-Upcycling</a>: Leuchtobjekte aus einem alten Bildschirm.</li><li><a href=\"/bezugsquellen\">Bezugsquellen</a>: LEDs, Widerstände und Kleinmaterial.</li></ul>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "hilfsmittel",
+    "accordion": false,
+    "title": "Hilfsmittel",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Hilfsmittel</h2><p><a href=\"https://simpop.org/ohms-law/ohms-law.htm\" rel=\"noopener noreferrer\" target=\"_blank\">Widerstands-Simulator</a> (ohmsches Gesetz zum Ausprobieren)</p>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "led-karte",
+  "label": "LED-Karte",
+  "title": "LED-Karte",
+  "sections": [
+   {
+    "id": "kopf-karte",
+    "accordion": false,
+    "title": "",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h1>LED-Karte</h1><p>Eine Karte mit einer LED ausstatten.</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "material-karte",
+    "accordion": false,
+    "title": "Material",
+    "anchor": "",
+    "gallery": false,
+    "layout": "media-copy mitte",
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Material</h2><ul><li>3-V-Knopfzelle, z. B. CR2032</li><li>Kupferklebeband</li><li>LED 3 mm</li><li>Postkarte oder Papier</li><li>Schere, Leim, Klebeband</li></ul>"
+       }
+      ]
+     },
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<figure class=\"grafik schmal\"><svg viewBox=\"0 0 340 336\" role=\"img\" aria-labelledby=\"led-aufbau-titel\" font-family=\"Lato, Arial, sans-serif\" font-size=\"14\"><title id=\"led-aufbau-titel\">Aufbau einer LED: Anode mit langem Anschluss, Kathode mit grosser Fahne, Abflachung am Rand auf der Kathodenseite</title><g fill=\"none\" stroke=\"#222\" stroke-width=\"2\" stroke-linejoin=\"round\"><path d=\"M130 190V80a40 40 0 0 1 80 0v110\" fill=\"#f3f6f7\"/><path d=\"M120 190h90v12h-90z\" fill=\"#e2e8ea\"/><path d=\"M150 202V318M186 202V288M150 190V132M186 190V152\"/><rect x=\"146\" y=\"126\" width=\"8\" height=\"6\" fill=\"#fff\"/><path d=\"M174 152h24l6-16h-36z\" fill=\"#fff\"/><path d=\"M152 126C156 106 180 108 186 132\" stroke-width=\"1.2\"/></g><rect x=\"182\" y=\"132\" width=\"8\" height=\"6\" fill=\"#222\"/><g fill=\"none\" stroke=\"#8a8a8a\" stroke-width=\"1\"><path d=\"M192 134L232 108M205 144H232M211 196H232\"/></g><g fill=\"#222\"><text x=\"236\" y=\"113\">Halbleiter</text><text x=\"236\" y=\"151\">grosse «Fahne»</text><text x=\"236\" y=\"201\">Abflachung</text><text x=\"194\" y=\"282\">Kathode (−)</text><text x=\"142\" y=\"252\" text-anchor=\"end\">Anode (+)</text><text x=\"142\" y=\"316\" text-anchor=\"end\">langer Anschluss</text></g></svg><figcaption>Aufbau einer LED. Der lange Anschluss ist die Anode (+).</figcaption></figure>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "karten",
+    "accordion": false,
+    "title": "Beispiele",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<ul class=\"bildraster\"><li><figure><img src=\"/assets/karte-1.webp\" alt=\"Kurzer Film: Eine Karte mit aufgeklebten Herzen wird aufgeklappt, innen leuchtet eine blaue LED\" width=\"209\" height=\"369\" loading=\"lazy\"></figure></li><li><figure><img src=\"/assets/karte-2.webp\" alt=\"Kurzer Film: Ein Finger drückt auf eine blaue Karte mit Mond und Vogel, der Mond leuchtet auf\" width=\"179\" height=\"316\" loading=\"lazy\"></figure></li><li><figure><img src=\"/assets/karte-3.webp\" alt=\"Kurzer Film: Ein Finger drückt auf ein Herz einer violetten Karte, darauf leuchtet eine blaue LED\" width=\"220\" height=\"388\" loading=\"lazy\"></figure></li></ul><p>Hergestellt von Anouk (7) und Ava (10) Bürgi.</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "kurzschluss",
+    "accordion": false,
+    "title": "Achtung Kurzschluss",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Achtung Kurzschluss</h2><p>Der Rand der Knopfzelle gehört zum Pluspol. Liegt das Kupferband oben auf dem Minuspol, kann es den Rand berühren. Darum die Knopfzelle mit der beschrifteten Plusseite nach oben einlegen.</p><ul class=\"bildraster breit\"><li><figure><img src=\"/assets/kurzschluss-moeglich.jpg\" alt=\"Kupferband auf dem Minuspol der Knopfzelle, es ist über den Rand gebogen, ein gelber Blitz markiert die Berührung\" width=\"531\" height=\"410\" loading=\"lazy\"><figcaption>Kurzschluss möglich.</figcaption></figure></li><li><figure><img src=\"/assets/kurzschluss-unwahrscheinlich.jpg\" alt=\"Kupferband auf der beschrifteten Plusseite der Knopfzelle, das zweite Band liegt darunter\" width=\"549\" height=\"410\" loading=\"lazy\"><figcaption>Kurzschluss unwahrscheinlich.</figcaption></figure></li></ul>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "led-leuchte",
+  "label": "LED-Leuchte",
+  "title": "LED-Leuchte",
+  "sections": [
+   {
+    "id": "kopf-leuchte",
+    "accordion": false,
+    "title": "",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h1>LED-Leuchte</h1><p>Eine oder mehrere LEDs über ein altes USB-Kabel betreiben.</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "material-leuchte",
+    "accordion": false,
+    "title": "Material und Werkzeug",
+    "anchor": "",
+    "gallery": false,
+    "layout": "media-copy mitte",
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<figure><img src=\"/assets/usb-led-material.jpg\" alt=\"Material und Werkzeug ausgelegt: Litzen, Widerstände, LEDs, Aderendhülsen, Schrumpfschläuche, USB-Kabel, Cutter, Abisolierzange, Seitenschneider, Kombizange und Teelicht\" width=\"900\" height=\"665\"></figure>"
+       }
+      ]
+     },
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Material und Werkzeug</h2><p><strong>Material:</strong> Litze (ca. 0,25 mm² Querschnitt), Widerstände 150 Ω / 0,25 W, LEDs, Aderendhülsen (ca. 1 mm² Querschnitt), Schrumpfschläuche (ca. 1,6 mm, 3,2 mm und 6 mm), altes USB-A-Kabel</p><p><strong>Werkzeug:</strong> Cutter, Abisolierzange, Seitenschneider, Kombizange, Kerze oder Heissluftföhn</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "vorgehen-leuchte",
+    "accordion": false,
+    "title": "Vorgehen",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Vorgehen</h2><ol class=\"bildraster\"><li><figure><img src=\"/assets/usb-led-01.jpg\" alt=\"Seitenschneider trennt ein schwarzes USB-Kabel\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>USB-Kabel mit dem Seitenschneider trennen.</figcaption></figure></li><li><figure><img src=\"/assets/usb-led-02.jpg\" alt=\"Cutter und Seitenschneider neben entfernter Isolation und Abschirmung, rote und schwarze Litze liegen frei\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>Isolation, Abschirmung, weisse und grüne Litze (falls vorhanden) entfernen.</figcaption></figure></li><li><figure><img src=\"/assets/usb-led-03.jpg\" alt=\"Abisolierzange an der roten und schwarzen Litze\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>Rote und schwarze Litze ca. 1 cm abisolieren.</figcaption></figure></li><li><figure><img src=\"/assets/usb-led-04.jpg\" alt=\"Seitenschneider neben Widerständen mit gekürzten Beinchen\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>Beinchen der Widerstände um die Hälfte kürzen.</figcaption></figure></li><li><figure><img src=\"/assets/usb-led-05.jpg\" alt=\"LED und Widerstand in einer Aderendhülse, darunter die Kombizange\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>LED (langes Bein) mit einer gepressten Aderendhülse mit dem Widerstand verbinden.</figcaption></figure></li><li><figure><img src=\"/assets/usb-led-06.jpg\" alt=\"LED mit Widerstand, rote und schwarze Litze angeschlossen, daneben die Kombizange\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>Rote Litze mit dem Widerstand, schwarze Litze mit dem zweiten Bein der LED verbinden.</figcaption></figure></li><li><figure><img src=\"/assets/usb-led-07.jpg\" alt=\"Verbindung mit Schrumpfschlauch über einer brennenden Kerze\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>Verbindungen mit Schrumpfschläuchen isolieren und sichern. Schrumpfen geht auch mit dem Heissluftföhn.</figcaption></figure></li><li><figure><img src=\"/assets/usb-led-08.jpg\" alt=\"LED leuchtet an einer Knopfzelle\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>LED mit einer Knopfzelle testen. Eventuell die Schritte bis hier mit weiteren LEDs wiederholen.</figcaption></figure></li><li><figure><img src=\"/assets/usb-led-09.jpg\" alt=\"Schrumpfschlauch über das USB-Kabel geschoben, rote und schwarze Litze ragen heraus\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>Schrumpfschlauch über das Kabel schieben.</figcaption></figure></li><li><figure><img src=\"/assets/usb-led-10.jpg\" alt=\"Mehrere rote und schwarze Litzen verbunden und mit Schrumpfschlauch isoliert\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>Alle roten und alle schwarzen Litzen verbinden, mit Schrumpfschlauch isolieren und sichern.</figcaption></figure></li><li><figure><img src=\"/assets/usb-led-11.jpg\" alt=\"Grosser Schrumpfschlauch über den Verbindungen am Kabelende\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>Schrumpfschlauch zurückschieben und schrumpfen, um die Verbindungen zu sichern.</figcaption></figure></li><li><figure><img src=\"/assets/usb-led-12.jpg\" alt=\"Zwei LEDs leuchten, das USB-Kabel steckt in einer Powerbank\" width=\"600\" height=\"596\" loading=\"lazy\"><figcaption>Mit einer Powerbank testen.</figcaption></figure></li></ol><p><a href=\"https://ljuokr.github.io/elektronik/anleitung-usb-led.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Anleitung als PDF</a> (1 Seite, 0,9 MB)</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "sicherheit-leuchte",
+    "accordion": false,
+    "title": "Sicherheitshinweise",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Sicherheitshinweise</h2><p>Immer, wenn mit Elektrizität gearbeitet wird, sind diese Hinweise zwingend mitzugeben:</p><ul><li>Es darf niemals direkt an der Steckdose gearbeitet werden (230 V), da der Kontakt mit einer Spannung in diesem Bereich unter Umständen tödlich sein kann.</li><li>Von selbst gebauten Elektronikobjekten geht eine Feuergefahr aus. Diese dürfen darum nicht unbeaufsichtigt betrieben werden.</li></ul>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "elektromagnet",
+  "label": "Elektromagnet",
+  "title": "Elektromagnet",
+  "sections": [
+   {
+    "id": "kopf-magnet",
+    "accordion": false,
+    "title": "",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h1>Elektromagnet</h1><p>Einen einfachen Elektromagneten herstellen.</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "aufgabe-magnet",
+    "accordion": false,
+    "title": "Aufgabe",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Aufgabe</h2><p>Einen Elektromagneten herstellen, dessen elektromagnetisches Feld einen Permanentmagneten auf Tastendruck in Bewegung bringt. Anschliessend ein Objekt entwickeln, das durch den Elektromagneten in Bewegung versetzt wird. Das Objekt hat eine sinnvolle oder sinnlose Funktion und/oder kommuniziert etwas. Das ganze System ist so konstruiert, dass es ohne fremde Einwirkung in die Ausgangsposition zurückfällt.</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "material-magnet",
+    "accordion": false,
+    "title": "Material",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Material</h2><ul class=\"bildraster\"><li><figure><img src=\"/assets/em-kupferlackdraht.jpg\" alt=\"Spule mit Kupferlackdraht\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>Kupferlackdraht Ø 0,2 mm, Länge 3 m</figcaption></figure></li><li><figure><img src=\"/assets/em-musterklammern.jpg\" alt=\"Musterklammer\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>Musterklammern</figcaption></figure></li><li><figure><img src=\"/assets/em-rohr.jpg\" alt=\"Rohr\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>Rohr (Innendurchmesser passend zum Magnet)</figcaption></figure></li><li><figure><img src=\"/assets/em-flachbatterie.jpg\" alt=\"Flachbatterie mit zwei Anschlusslaschen\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>Flachbatterie 4,5 V mit Anschlüssen − und +</figcaption></figure></li><li><figure><img src=\"/assets/em-magnet.jpg\" alt=\"Zylinderförmiger Neodym-Magnet\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>Neodym-Magnet</figcaption></figure></li><li><figure><img src=\"/assets/em-taster.jpg\" alt=\"Taster mit schwarzem Knopf\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>Taster</figcaption></figure></li></ul>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "vorgehen-magnet",
+    "accordion": false,
+    "title": "Vorgehen",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Vorgehen</h2><ol class=\"bildraster\"><li><figure><img src=\"/assets/em-wickeln.jpg\" alt=\"Kupferlackdraht wird auf das eingespannte Rohr gewickelt\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>3 m Kupferlackdraht möglichst gleichmässig, mehrlagig und immer in die gleiche Richtung wickeln. Die Spule muss kürzer sein als der Magnet und am Ende des Rohrs liegen. Ca. 15 cm Kupferlackdraht für die Anschlüsse einberechnen.</figcaption></figure></li><li><figure><img src=\"/assets/em-anschleifen.jpg\" alt=\"Drahtende wird auf Schleifpapier angeschliffen\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>Die Enden des Kupferlackdrahts anschleifen. Der Lack muss weg, damit sich die Stellen löten lassen.</figcaption></figure></li><li><figure><img src=\"/assets/em-verzinnen.jpg\" alt=\"Lötkolben verzinnt die Musterklammern\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>Alle Lötstellen verzinnen.</figcaption></figure></li><li><figure><img src=\"/assets/em-anloeten.jpg\" alt=\"Drahtende wird an eine Musterklammer gelötet\" width=\"600\" height=\"600\" loading=\"lazy\"><figcaption>Kupferdrahtenden anlöten und den Magnet testen. Vorsicht, er kann aus dem Rohr spicken und ins Auge treffen. Danach den Taster in den Stromkreis einbauen.</figcaption></figure></li></ol>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fehlersuche-magnet",
+    "accordion": false,
+    "title": "Fehlersuche",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Fehlersuche</h2><p>Einmal zusammengebaut, braucht es in der Regel noch einiges an Ausprobieren, bis der Elektromagnet funktioniert. Folgende Hinweise können dabei helfen:</p><ul><li>Funktionieren die einzelnen Komponenten? Ist die Batterie geladen? Leiten die Lötstellen? Funktioniert der Taster?</li><li>Ist genügend Spiel zwischen Rohr und Magnet, damit sich dieser frei bewegen kann?</li><li>Wird der Magnet nach unten statt nach oben gedrückt? Meist hilft es, die Batterie oder den Magnet umzupolen. Manchmal hilft eine kleine Unterlage im Ende des Rohrs.</li><li>Wird der Magnet in der Spule «gefangen»? Das passiert, wenn die Spule länger ist als der Magnet.</li></ul>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "beispiele-magnet",
+    "accordion": false,
+    "title": "Beispiele",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Beispiele</h2><ul class=\"bildraster\"><li><figure><img src=\"/assets/em-beispiel-1.webp\" alt=\"Kurzer Film: Gelber Klotz mit Taster, auf Tastendruck bewegt sich eine kleine Figur auf einem Draht\" width=\"260\" height=\"473\" loading=\"lazy\"><figcaption>Alain Wittwer, HS23</figcaption></figure></li><li><figure><img src=\"/assets/em-beispiel-2.webp\" alt=\"Kurzer Film: Holzkiste, aus der auf Tastendruck ein Hase hochspringt, die geöffnete Seite zeigt das Innere\" width=\"260\" height=\"473\" loading=\"lazy\"><figcaption>Anouk Spring, HS22</figcaption></figure></li><li><figure><img src=\"/assets/em-beispiel-3.webp\" alt=\"Kurzer Film: Flipperkasten aus Holz mit Holzstiften, ein Finger drückt den Taster unten links\" width=\"260\" height=\"473\" loading=\"lazy\"><figcaption>Manuel Schüpbach, HS22</figcaption></figure></li></ul>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "fet",
+  "label": "Feldeffekt-Transistor (FET)",
+  "title": "Feldeffekt-Transistor (FET)",
+  "sections": [
+   {
+    "id": "kopf-fet",
+    "accordion": false,
+    "title": "",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h1>Feldeffekt-Transistor (FET)</h1><p>Einen Feldeffekt-Transistor einsetzen.</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "material-fet",
+    "accordion": false,
+    "title": "Material",
+    "anchor": "",
+    "gallery": false,
+    "layout": "media-copy mitte",
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<figure><img src=\"/assets/fet-material.jpg\" alt=\"Flachbatterie, Transistor IRLZ14 und 1-W-LED auf dem Tisch, darunter farbige Krokodilklemmenkabel\" width=\"700\" height=\"1159\"></figure>"
+       }
+      ]
+     },
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Material</h2><ul><li>Flachbatterie 4,5 V</li><li>FET-Transistor IRLZ14</li><li>1-W-LED</li><li>Krokodilklemmenkabel</li><li>Baumwollschnur</li></ul>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "anschluesse-fet",
+    "accordion": false,
+    "title": "Anschlüsse",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<figure><img src=\"/assets/fet-klemmen.jpg\" alt=\"IRLZ14 in der Hand, an den drei Anschlüssen stecken Krokodilklemmen\" width=\"700\" height=\"1158\" loading=\"lazy\"></figure>"
+       }
+      ]
+     },
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Anschlüsse</h2><figure class=\"grafik\"><svg viewBox=\"0 0 460 250\" role=\"img\" aria-labelledby=\"fet-anschluss-titel\" font-family=\"Lato, Arial, sans-serif\" font-size=\"15\"><title id=\"fet-anschluss-titel\">Schaltzeichen des FET mit Gate, Drain und Source, daneben das Gehäuse IRLZ14 von vorn mit den Beinen G, D und S von links nach rechts</title><g fill=\"none\" stroke=\"#23333a\" stroke-width=\"2.5\"><path d=\"M30 152H88M88 92V158M100 88V108M100 116V134M100 142V162M100 98H140V40M100 152H140V214M100 125H140V152M140 98H170V117M170 134V152H140\"/></g><path d=\"M102 125L115 119V131Z\" fill=\"#23333a\"/><path d=\"M162 134H178L170 118Z\" fill=\"#23333a\"/><path d=\"M161 117H179\" stroke=\"#23333a\" stroke-width=\"2.5\"/><g fill=\"#23333a\" font-weight=\"700\"><text x=\"30\" y=\"142\">G</text><text x=\"150\" y=\"48\">D</text><text x=\"150\" y=\"212\">S</text></g><text x=\"100\" y=\"244\" text-anchor=\"middle\" fill=\"#555\">Schaltzeichen</text><path d=\"M310 20H410V70H310Z\" fill=\"#c9cfd3\" stroke=\"#8a959b\" stroke-width=\"1.5\"/><circle cx=\"360\" cy=\"42\" r=\"10\" fill=\"#fff\" stroke=\"#8a959b\" stroke-width=\"1.5\"/><rect x=\"315\" y=\"70\" width=\"90\" height=\"80\" rx=\"2\" fill=\"#2a2a2a\"/><text x=\"360\" y=\"114\" text-anchor=\"middle\" fill=\"#fff\" font-size=\"13\">IRLZ14</text><g stroke=\"#9aa3a8\" stroke-width=\"6\"><path d=\"M335 150V212M360 150V212M385 150V212\"/></g><g fill=\"#23333a\" font-weight=\"700\" text-anchor=\"middle\"><text x=\"335\" y=\"234\">G</text><text x=\"360\" y=\"234\">D</text><text x=\"385\" y=\"234\">S</text></g></svg><figcaption>Links das Schaltzeichen, rechts das Gehäuse von vorn (Beschriftung sichtbar): Gate (G), Drain (D), Source (S). Die Metallfahne ist mit dem Drain verbunden.</figcaption></figure>"
+       }
+      ]
+     }
+    ],
+    "layout": "media-copy mitte"
+   },
+   {
+    "id": "schaltung-fet",
+    "accordion": false,
+    "title": "Schaltung aufbauen",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Schaltung aufbauen</h2><p>Die Schaltung gemäss Bild aufbauen.</p><figure><img src=\"/assets/fet-aufbau.jpg\" alt=\"Aufgebaute Schaltung: Flachbatterie, FET, LED und Krokodilklemmenkabel, das gelbe Gate-Kabel liegt frei\" width=\"1100\" height=\"550\" loading=\"lazy\"></figure><h3>Eine LED mit dem FET schalten</h3><figure class=\"grafik\"><svg viewBox=\"0 70 640 292\" role=\"img\" aria-labelledby=\"fet-plan-titel\" font-family=\"Lato, Arial, sans-serif\" font-size=\"15\"><title id=\"fet-plan-titel\">Schaltplan: Pluspol der 4,5-V-Batterie an die Anode der 1-W-LED, Kathode an den Drain des FET IRLZ14, Source an den Minuspol. Am Gate hängt ein freies gelbes Kabel.</title><g fill=\"none\" stroke-width=\"3\" stroke-linejoin=\"round\"><path d=\"M128 92H443V128M128 92V156\" stroke=\"#c94a43\"/><path d=\"M128 186V292H443V252M443 147V197\" stroke=\"#23333a\"/><path d=\"M234 225H405\" stroke=\"#c48f00\"/></g><g fill=\"none\" stroke=\"#23333a\" stroke-width=\"3\"><path d=\"M106 156H150M116 166H140M106 176H150M116 186H140\"/><path d=\"M431 147H455\"/><path d=\"M405 190V260M418 189V207M418 216V234M418 243V261M418 197H443M418 252H443M418 225H443V252M443 197H464V217M464 234V252H443M456 217H472\"/><path d=\"M462 134L476 120M468 144L482 130\" stroke-width=\"2\"/></g><path d=\"M433 128H453L443 146Z\" fill=\"#fff\" stroke=\"#23333a\" stroke-width=\"2.5\"/><path d=\"M456 234H472L464 218Z\" fill=\"#fff\" stroke=\"#23333a\" stroke-width=\"2\"/><path d=\"M420 225L431 219V231Z\" fill=\"#23333a\"/><path d=\"M479 117L476 126L470 123ZM485 127L482 136L476 133Z\" fill=\"#23333a\"/><circle cx=\"128\" cy=\"92\" r=\"5\" fill=\"#c94a43\"/><circle cx=\"128\" cy=\"292\" r=\"5\" fill=\"#23333a\"/><circle cx=\"230\" cy=\"225\" r=\"5\" fill=\"#fff\" stroke=\"#c48f00\" stroke-width=\"2.5\"/><g fill=\"#23333a\"><text x=\"112\" y=\"98\" text-anchor=\"middle\" fill=\"#c94a43\" font-weight=\"700\" font-size=\"18\">+</text><text x=\"112\" y=\"298\" text-anchor=\"middle\" font-weight=\"700\" font-size=\"18\">−</text><text x=\"96\" y=\"168\" text-anchor=\"end\">Batterie</text><text x=\"96\" y=\"188\" text-anchor=\"end\" font-weight=\"700\">4,5 V</text><text x=\"425\" y=\"133\" text-anchor=\"end\" fill=\"#6b7a80\" font-size=\"13\">A (+)</text><text x=\"425\" y=\"152\" text-anchor=\"end\" fill=\"#6b7a80\" font-size=\"13\">K (−)</text><text x=\"494\" y=\"143\" font-weight=\"700\">1-W-LED*</text><text x=\"472\" y=\"184\" font-weight=\"700\">D</text><text x=\"472\" y=\"276\" font-weight=\"700\">S</text><text x=\"494\" y=\"222\" font-weight=\"700\">FET</text><text x=\"494\" y=\"240\" fill=\"#6b7a80\">IRLZ14</text><text x=\"230\" y=\"208\" fill=\"#a77a00\" font-weight=\"700\">Gate (G)</text><text x=\"230\" y=\"248\" fill=\"#6b7a80\" font-size=\"13\">freies gelbes Kabel</text></g><rect x=\"36\" y=\"316\" width=\"568\" height=\"40\" rx=\"8\" fill=\"#f1f4f3\"/><path d=\"M320 324V348\" stroke=\"#d5dbd9\"/><g fill=\"#23333a\" font-weight=\"700\" text-anchor=\"middle\"><text x=\"178\" y=\"341\">Gate kurz an + → LED an</text><text x=\"462\" y=\"341\">Gate kurz an − → LED aus</text></g></svg><figcaption>* Bei festem Einbau einen passenden Vorwiderstand zur Strombegrenzung vorsehen.</figcaption></figure>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "ausprobieren-fet",
+    "accordion": false,
+    "title": "Ausprobieren",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Ausprobieren</h2><ul class=\"bildraster\"><li><figure><img src=\"/assets/fet-gate.webp\" alt=\"Kurzer Film: Das freie gelbe Gate-Kabel berührt abwechselnd Plus- und Minuspol, die LED geht an und aus\" width=\"270\" height=\"455\" loading=\"lazy\"><figcaption>Mit dem Gate-Kabel abwechselnd den Plus- und den Minuspol der Batterie berühren.</figcaption></figure></li><li><figure><img src=\"/assets/fet-koerper.webp\" alt=\"Kurzer Film: Eine Hand hält die Gate-Klemme, die andere tippt abwechselnd auf die Batteriepole, die LED geht an und aus\" width=\"270\" height=\"453\" loading=\"lazy\"><figcaption>Der Körper kann als Leiter dienen: Mit einer Hand die Gate-Klemme berühren und mit der anderen abwechselnd auf den Plus- und den Minuspol der Batterie tippen.</figcaption></figure></li><li><figure><img src=\"/assets/fet-schnur.webp\" alt=\"Kurzer Film: Das Gate-Kabel an einer feuchten Baumwollschnur, die Helligkeit der LED ändert sich\" width=\"270\" height=\"451\" loading=\"lazy\"><figcaption>Mit einer angefeuchteten Baumwollschnur lässt sich ein einfaches Potenziometer bauen und so die Spannung am Gate verändern.</figcaption></figure></li></ul>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "funktion-fet",
+    "accordion": false,
+    "title": "Wie funktioniert ein Feldeffekt-Transistor?",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Wie funktioniert ein Feldeffekt-Transistor?</h2><p>Ein Feldeffekt-Transistor steuert die Leitfähigkeit eines Halbleiterkanals allein über eine Steuerspannung am Gate. Das elektrische Feld öffnet oder schliesst einen leitenden Kanal. Eine kleine Steuerspannung kontrolliert damit einen grösseren Stromfluss. So kann er als Schalter oder Verstärker eingesetzt werden.</p><figure class=\"schritt\"><img src=\"/assets/fet-animation.webp\" alt=\"Animation: Kanal zwischen Source und Drain, die Spannung am Gate verändert eine Sperrzone und öffnet oder schliesst den Kanal\" width=\"628\" height=\"325\" loading=\"lazy\"><figcaption>Animation: Stefan Riepl (Quark48), <a href=\"https://commons.wikimedia.org/wiki/File:FET-Ani.gif\" rel=\"noopener noreferrer\" target=\"_blank\">Wikimedia Commons</a>, gemeinfrei.</figcaption></figure>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "fet-und-microbit",
+  "label": "FET und micro:bit",
+  "title": "FET und micro:bit",
+  "sections": [
+   {
+    "id": "kopf-microbit",
+    "accordion": false,
+    "title": "",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h1>FET und micro:bit</h1><p>Einen <a href=\"/fet\">Feldeffekt-Transistor (FET)</a> zusammen mit einem micro:bit verwenden.</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "material-microbit",
+    "accordion": false,
+    "title": "Material",
+    "anchor": "",
+    "gallery": false,
+    "layout": "media-copy mitte",
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<figure><img src=\"/assets/microbit-material.jpg\" alt=\"Flachbatterie, micro:bit, Batteriehalter mit zwei AAA-Batterien, FET, gelber Getriebemotor mit Rad und Krokodilklemmenkabel\" width=\"900\" height=\"707\"></figure>"
+       }
+      ]
+     },
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Material</h2><ul><li>Flachbatterie 4,5 V</li><li>Batterie für den micro:bit (2 × 1,5 V AAA)</li><li>FET-Transistor IRLZ14</li><li>Krokodilklemmenkabel</li><li>micro:bit</li><li>Getriebemotor</li></ul>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "vorgehen-microbit",
+    "accordion": false,
+    "title": "Vorgehen",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Vorgehen</h2><p>Den micro:bit so programmieren, dass er einen Pin abwechselnd ein- und wieder ausschaltet. Das Herz oder eine LED im gleichen Takt blinken lassen, damit sichtbar ist, ob das Programm läuft. Die Schaltung gemäss Bild aufbauen.</p><figure><img src=\"/assets/microbit-aufbau.jpg\" alt=\"Aufgebaute Schaltung: micro:bit mit leuchtendem Herz, Flachbatterie, FET und Getriebemotor, verbunden mit Krokodilklemmenkabeln\" width=\"1100\" height=\"825\" loading=\"lazy\"></figure>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "bildschirm-upcycling",
+  "label": "Bildschirm-Upcycling",
+  "title": "Bildschirm-Upcycling",
+  "sections": [
+   {
+    "id": "kopf-bildschirm",
+    "accordion": false,
+    "title": "",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h1>Bildschirm-Upcycling</h1><p>Ein ausgedienter Flachbildschirm, in seine Teile zerlegt, und daraus entstandene Leuchtobjekte.</p><figure><img src=\"/assets/bildschirm-zerlegt.jpg\" alt=\"Zerlegter Flachbildschirm: Gehäuseteile, Elektronik, Kabel, Platten und Folien nebeneinander auf dem Tisch\" width=\"1024\" height=\"475\"></figure>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "objekte-bildschirm",
+    "accordion": false,
+    "title": "Leuchtobjekte",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<ul class=\"bildraster breit\"><li><figure><img src=\"/assets/bildschirm-wuerfel-blau.jpg\" alt=\"Würfel aus Acrylglas, blau beleuchtet, in der Hand gehalten\" width=\"768\" height=\"577\" loading=\"lazy\"></figure></li><li><figure><img src=\"/assets/bildschirm-wuerfel-bunt.jpg\" alt=\"Würfel aus geschichteten Platten, rot und blau beleuchtet\" width=\"768\" height=\"577\" loading=\"lazy\"></figure></li><li><figure><img src=\"/assets/bildschirm-pyramide.jpg\" alt=\"Leuchtende Pyramide aus milchigen Platten\" width=\"768\" height=\"577\" loading=\"lazy\"></figure></li></ul>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "bezugsquellen",
+  "label": "Bezugsquellen",
+  "title": "Bezugsquellen",
+  "sections": [
+   {
+    "id": "kopf-bezug",
+    "accordion": false,
+    "title": "",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h1>Bezugsquellen</h1><ul><li><a href=\"https://www.bastelgarage.ch/\" rel=\"noopener noreferrer\" target=\"_blank\">bastelgarage.ch</a></li><li><a href=\"https://www.distrelec.ch/\" rel=\"noopener noreferrer\" target=\"_blank\">distrelec.ch</a></li><li><a href=\"https://www.aliexpress.com/\" rel=\"noopener noreferrer\" target=\"_blank\">aliexpress.com</a></li><li><a href=\"https://www.opitec.com/de-ch/werken-technik/technisches-zubehoer/\" rel=\"noopener noreferrer\" target=\"_blank\">opitec.ch, technisches Zubehör</a></li></ul><p>Preise Stand 2024.</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "led-bezug",
+    "accordion": false,
+    "title": "LED 5 mm / 3 mm",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>LED 5 mm / 3 mm</h2><p>Ausser wenn die LED direkt sichtbar ist, lohnt es sich, mit ultrahellen oder superhellen LEDs zu arbeiten (ab ca. 10 000 mcd bzw. 10 cd, Candela). Diese LEDs haben ein klares Gehäuse. LEDs mit eingefärbtem Gehäuse sind meist nicht sehr hell und nur dann geeignet, wenn die LED direkt sichtbar sein soll.</p><ul><li><a href=\"https://www.opitec.com/de-ch/\" rel=\"noopener noreferrer\" target=\"_blank\">Opitec.ch</a>: ca. 70 Rappen pro LED. Vorteil: Man kann kaum danebengreifen.</li><li><a href=\"https://www.distrelec.ch/\" rel=\"noopener noreferrer\" target=\"_blank\">Distrelec.ch</a>: ca. 10 Rappen pro LED, Suchbegriff «THT LED 5 mm». Vorteil: schnelle Lieferung, Preis. Nachteil: Die Auswahl kann überfordern.</li><li><a href=\"https://www.aliexpress.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Aliexpress.com</a>: ca. 1 Rappen pro LED, Suchbegriff «LED 5 mm ultra bright». Nachteile: Lieferung dauert ca. 1 bis 4 Wochen, Rückgabe ist nicht möglich, Bestellung nur per Kreditkarte, Transport wenig ökologisch, da auch die Verpackung für Endverbraucherinnen und Endverbraucher per Luftfracht transportiert wird, rechtlicher Graubereich durch fehlende CE-Prüfung.</li></ul>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "widerstaende-bezug",
+    "accordion": false,
+    "title": "Widerstände 1/4 W",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Widerstände 1/4 W</h2><p>Was für LEDs gilt, gilt auch für Widerstände. Suchbegriff bei Distrelec: «250 mW 150 Ohm 5 %», bei Aliexpress: «150R».</p>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "streifen-bezug",
+    "accordion": false,
+    "title": "LED-Streifen",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>LED-Streifen</h2><p>LED-Streifen (Strips) sind auf eine bestimmte Spannung ausgelegt. Es empfiehlt sich, nur Streifen für 5 V zu kaufen. RGB-Streifen (Rot-Grün-Blau) benötigen einen Controller und sind darum nicht zu empfehlen (Ausnahme: Physical-Computing-Vorhaben). Die Streifen lassen sich mit der Schere schneiden. Bezugsquellen: <a href=\"https://ledexpert.ch/\" rel=\"noopener noreferrer\" target=\"_blank\">ledexpert.ch</a> (ca. 10 Fr./m) oder <a href=\"https://www.aliexpress.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Aliexpress.com</a> (ca. 1 Fr./m).</p><ul class=\"bildraster\"><li><figure><img src=\"/assets/led-filament.jpg\" alt=\"Biegsames LED-Filament in Orange auf Holz\" width=\"500\" height=\"500\" loading=\"lazy\"><figcaption>LED-Filament</figcaption></figure></li><li><figure><img src=\"/assets/led-perle.jpg\" alt=\"Einzelne LED-Perle mit zwei Anschlusslaschen auf Holz\" width=\"500\" height=\"500\" loading=\"lazy\"><figcaption>LED-Perle</figcaption></figure></li><li><figure><img src=\"/assets/led-32mm.jpg\" alt=\"Runde LED-Platine mit sechs LEDs auf Holz\" width=\"500\" height=\"500\" loading=\"lazy\"><figcaption>LED 32 mm, 5 V</figcaption></figure></li></ul>"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "kleinmaterial-bezug",
+    "accordion": false,
+    "title": "Kleinmaterial",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h2>Kleinmaterial</h2><ul><li>Aderendhülsen Kupfer, 1-2 mm²</li><li>Kupferklebeband 5 mm</li><li>Schrumpfschlauch 2:1, 1,5 bis 3,5 mm</li><li>Litze PVC 0,25 mm²</li></ul>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "slug": "impressum",
+  "label": "Impressum",
+  "title": "Impressum",
+  "sections": [
+   {
+    "id": "impressum",
+    "accordion": false,
+    "title": "Impressum",
+    "anchor": "",
+    "gallery": false,
+    "cells": [
+     {
+      "blocks": [
+       {
+        "type": "html",
+        "html": "<h1>Impressum</h1><p>Grundlage ist die Google-Site «Elektronik» des Fachbereichs Design &amp; Technik (Lukas Jordi, September 2024). Fragen und Rückmeldungen an <a href=\"mailto:lukas.jordi@phbern.ch\">lukas.jordi@phbern.ch</a>.</p><p>Lukas Jordi, in Co-Autorschaft mit Claude Opus 5.5 (KI-Modell von Anthropic). Stand November 2026.</p><p><a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de\" rel=\"license noopener noreferrer\" target=\"_blank\"><img src=\"/assets/lizenz-cc-by-nc-sa.png\" alt=\"Lizenz Creative Commons BY-NC-SA 4.0\" width=\"134\" height=\"47\"></a></p><p>Die Seite steht unter der Lizenz Creative Commons BY-NC-SA 4.0. Ausgenommen sind Bilder Dritter, ihre Lizenz steht jeweils unter dem Bild.</p>"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]
